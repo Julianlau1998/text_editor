@@ -2,7 +2,9 @@
   <div>
     <topNav @fileInput="fileInput" @share="shareFile" />
     <Editor :share="share" />
+<!--
     <AdCard v-if="!iOS" class="mt-5" />
+-->
     <RateModal v-if="showRateModal" @openStore="openStore" @close="showRateModal=false" />
   </div>
 </template>
