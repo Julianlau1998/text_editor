@@ -33,13 +33,13 @@
             </div>
         </transition>
 
-        <button
+<!--        <button
             v-if="iosLiteApp"
             @click="webviewTrigger"
             class="button is-ads-button is-border-secondary mt-5"
         >
           Get Rid of ads
-        </button>
+        </button>-->
 
         <SaveModal
             v-if="saveFileModalOpen"
