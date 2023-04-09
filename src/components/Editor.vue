@@ -6,7 +6,7 @@
                   <label class="label is-pointer noselect button is-primary">
                     <input @change="fileInput" accept=".txt, .md" type="file" required/>
                     <span>
-                      <i class="fas fa-upload pl-1 pr-2" /> Import File
+                      <i class="fas fa-upload pl-1 pr-2" /> Import
                     </span>
                   </label>
                   <button
@@ -15,7 +15,7 @@
                       class="button is-primary ml-4 pl-5 pr-4 mt-4 is-save-button"
                       @click="saveFileModal"
                   >
-                    Save File
+                    Save
                     <i class="fas fa-download pl-1 pr-2" />
                   </button>
                 </span>

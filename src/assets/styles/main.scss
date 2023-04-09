@@ -17,6 +17,10 @@ html {
     overflow: hidden;
 }
 
+.button, .is-button {
+
+}
+
 .modal {
     margin: auto;
     position: absolute;
@@ -56,7 +60,7 @@ html {
     &.is-primary {
         background-color: $primary;
         color: black;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     &.is-secondary {
         background-color: $secondary;
