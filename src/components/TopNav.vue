@@ -20,12 +20,6 @@
                             Share File
                         </span>
                     </span>
-                    <span v-if="helpAvailable">
-                        <div class="hr" />
-                        <span @click="help" class="is-pointer mt-6 setting noselect">
-                            Help
-                        </span>
-                    </span>
                     <span v-if="iosLiteApp">
                           <div class="hr" />
                           <span
