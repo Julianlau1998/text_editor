@@ -123,7 +123,7 @@ export default {
           }
         },
         rateApp () {
-          window.location.href = 'https://play.google.com/store/apps/details?id=app.markdowneditor.jl.com'
+          window.location.href = 'https://play.google.com/store/apps/details?id=app.txt_editor_jl.com'
         },
         async makePurchase(service) {
             const paymentMethods = [{
