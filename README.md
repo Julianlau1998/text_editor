@@ -1,4 +1,4 @@
-# markdown_editor
+# txt_editor
 
 ## Project setup
 ```
