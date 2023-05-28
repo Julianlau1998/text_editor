@@ -20,7 +20,7 @@
                             Share File
                         </span>
                     </span>
-<!--                    <span v-if="iosLiteApp">
+                    <span v-if="iosLiteApp">
                           <div class="hr" />
                           <span
                               @click="webviewTrigger"
@@ -28,7 +28,7 @@
                           >
                               Get Rid Of Ads
                           </span>
-                    </span>-->
+                    </span>
                     <span v-if="!iOS">
                           <div class="hr" />
                           <span
