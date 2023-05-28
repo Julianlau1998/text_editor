@@ -115,7 +115,7 @@ export default {
             this.$router.push('/')
         },
         webviewTrigger () {
-            window.webkit.messageHandlers.showInterstitial.postMessage({
+            window.webkit.messageHandlers.openAppStore.postMessage({
               "message": 'openAppStore'
             })
         },
