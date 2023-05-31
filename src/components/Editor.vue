@@ -33,13 +33,13 @@
             </div>
         </transition>
 
-<!--        <button
+        <button
             v-if="iosLiteApp"
-            @click="webviewTrigger"
-            class="button is-ads-button is-border-secondary mt-5"
+            @click="openAppStore"
+            class="button is-ads-button is-border-secondary mt-6"
         >
           Get Rid of ads
-        </button>-->
+        </button>
 
         <SaveModal
             v-if="saveFileModalOpen"
@@ -89,7 +89,7 @@ export default {
             return this.$store.state.inputFile
         },
         iosLiteApp () {
-          return window.webkit && window.webkit.messageHandlers
+          return window.webkit && window.webkit.messageHandlers.openAppStore
         }
     },
     created () {
@@ -131,6 +131,11 @@ export default {
           reader.readAsText(file);
           this.settings = false
         },
+        openAppStore () {
+          window.webkit.messageHandlers.openAppStore.postMessage({
+            "message": 'openAppStore'
+          });
+        }
     }
 }
 </script>
