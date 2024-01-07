@@ -122,6 +122,9 @@ export default {
                     "title": 'txt File',
                     "text": this.inputText
                 })
+                .then(() => {
+                    this.addClick()
+                })
             }
         },
         fileInput (event) {
@@ -129,12 +132,16 @@ export default {
           const reader = new FileReader();
           reader.onload = e => this.inputText =  e.target.result
           reader.readAsText(file);
+          this.addClick()
           this.settings = false
         },
         openAppStore () {
           window.webkit.messageHandlers.openAppStore.postMessage({
             "message": 'openAppStore'
           });
+        },
+        addClick () {
+            this.$emit('addClick')
         }
     }
 }

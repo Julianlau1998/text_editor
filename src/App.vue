@@ -8,19 +8,11 @@
   export default {
     data () {
       return {
-        iOS: false
+        iOS: false,
+        clicks: 0
       }
     },
     created () {
-      if (this.iosLiteApp) {
-        setTimeout(() => {
-          this.showInterstitial()
-        }, 20000)
-        setInterval(() => {
-          this.showInterstitial()
-        }, 70000)
-      }
-
       this.iOS = [
       'iPad Simulator',
       'iPhone Simulator',
@@ -32,18 +24,8 @@
     this.$store.state.iOS = this.iOS
     },
     computed: {
-      iosLiteApp () {
-        return window.webkit && window.webkit.messageHandlers
-      }
     },
     methods: {
-      showInterstitial () {
-        if (this.iosLiteApp) {
-          window.webkit.messageHandlers.showInterstitial.postMessage({
-            "message": 'showInterstitial'
-          })
-        }
-      }
     }
   }
 </script>
