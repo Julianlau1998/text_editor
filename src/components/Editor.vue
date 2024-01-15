@@ -26,6 +26,7 @@
         <transition name="fade" mode="out-in">
             <div :key="1">
                 <textarea
+                    @click="addClick"
                     v-model="inputText"
                     class="is-editor pt-5 pb-5 is-primary mt-1"
                     placeholder="Type your text here"
